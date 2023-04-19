@@ -1,13 +1,141 @@
-body {
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace
+}
+
+.App {
+  max-width: 500px;
+  width: 100%;
+  min-height: 400px;
+  filter: drop-shadow(0px 20px 80px rgba(0, 0, 0, 0.24));
+  margin: 50px auto;
+  padding: 50px;
+  background: white;
+  border-radius: 24px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #121127;
+}
+
+form {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex
+}
+
+form button,form input {
+  flex: 3 1;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(18, 17, 39, 0.72);;
+  margin: 0 5px
+}
+
+form button {
+  flex: 1 1;
+  border: 1px solid rgba(18, 17, 39, 0.12);
+  border-radius: 6px;
+  background: unset;
+  color: #121127;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid rgba(18, 17, 39, 0.12);
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize
+}
+
+ul li .active {
+  opacity: .5;
+  text-decoration: line-through
+}
+
+.row input,ul li input {
+  margin-right: 5px;
+  transform: translateY(1px)
+}
+
+.row button,ul li button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #444BD3;
+  border-radius: 4px;
+  padding: 5px 15px;
+  cursor: pointer
+
+}
+
+ul li button:disabled {
+  opacity: .5;
+  cursor: not-allowed
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  background: white;
+}
+
+.row #delete {
+  background: #dc143c
+}
+
+label {
+  cursor: pointer
+}
+
+@media (max-width: 400px) {
+  .App {
+    padding:10px
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #444BD3;
+}
+body {
+  background-image: url("./img/Mainbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*# sourceMappingURL=main.af5d0e1a.chunk.css.map */
+.shape {
+  width: 100%;
+  height: 32px;
+  background-color: #444BD3;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

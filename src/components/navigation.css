@@ -1,0 +1,36 @@
+
+.navigationItem {
+    margin: 0;
+    border: unset;
+    padding: 0;
+
+}
+.navigation {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+}
+.navigationLink {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    text-decoration: none;
+    color: rgba(18, 17, 39, 0.72);
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 156px;
+    box-sizing: border-box;
+}
+.mr-2 {
+    margin-right: 56px;
+}
+.mr-0 {
+    margin-right: 0;
+}
